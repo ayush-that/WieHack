@@ -532,3 +532,24 @@ form a{
     transition: transform 1s;
 
 }
+/* style.css */
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.answer {
+    display: none;
+    padding-left: 20px;
+}
