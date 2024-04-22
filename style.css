@@ -533,23 +533,130 @@ form a{
 
 }
 /* style.css */
+/* Global Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: pink;
+    /* Example background color */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc7a00;
+}
+
+/* FAQ Section Styles */
 .faq-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 600px;
 }
 
 .faq-item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    /* Increased spacing */
 }
 
 .question {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 5px;
+    background-color: #f2f2f2;
+    /* Light grey background */
+    padding: 10px;
+    border-radius: 5px;
+    /* Rounded corners for the question */
 }
 
 .answer {
     display: none;
     padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/* Additional Styling */
+/* Add any additional styles you want here. This could include custom fonts, 
+   background images, or animations. */
+/* Hero Section Styles */
+.hero {
+    background-color: pink;
+    /* Change this to your preferred background color */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    /* Adjust the padding to control the height of the hero section */
+}
+
+.hero-content h1 {
+    margin: 0 0 20px;
+    /* Adds space below the heading */
+    font-size: 2.5rem;
+    /* Adjust the font size as needed */
+}
+
+.hero-content p {
+    margin: 0 0 40px;
+    /* Adds space below the paragraph */
+    font-size: 1.2rem;
+    /* Adjust the font size as needed */
+}
+
+.hero-btn {
+    background-color: #ff9900;
+    /* Change this to your preferred button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    /* Removes underline from the link */
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #cc7a00;
+    /* Darkens the button on hover */
+}
+/* Hero Section Styles */
+.hero {
+    background-image: url('');
+    /* Add your image path here */
+    background-size: cover;
+    /* Cover the entire section */
+    background-position: center;
+    /* Center the background image */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    /* Adjust the padding to control the height of the hero section */
 }

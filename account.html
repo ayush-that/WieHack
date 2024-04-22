@@ -1,155 +1,87 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>All Products - Redstore</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </head>
-    <body>
-        <!--<div class ="header">-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>SheShakti</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <link rel="icon" href="/public/favicon.ico" />
+</head>
+
+<body>
+    <div class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                    <a href="index.html"><img src="images/applogo.png" width=156px" /></a>
                 </div>
-                 <nav>
+                <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
-                         <li><a href="products.html">Products</a></li>
-                         <li><a href="">About</a></li>
-                         <li><a href="">Contact</a></li>
-                         <li><a href="account.html">Account</a></li>
-
+                        <li><a href="products.html">Hire Lawyer</a></li>
+                        <li><a href="help.html">Find Help</a></li>
+                        <li><a href="account.html">About Us</a></li>
                     </ul>
                 </nav>
-                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-                <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
-            </div>
-           
-        </div>
-    <!--</div>-->
-    
-        
-        <!------------------------------ account-page details------------------------------>
-
-        <div class="account-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/image1.png" width="100%">
-                    </div>
-                    <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn">
-                                <span onclick="login()">Login</span>
-                                <span onclick="register()">Register</span>
-                                <hr id="Indicator">
-                            </div>
-                            <form id="LoginForm">
-                                <input type="text" placeholder="username">
-                                <input type="password" placeholder="password">
-                                <button type="submit" class="btn">Login</button>
-                                <a href="">Forgot password</a>
-                            </form>
-                            
-                            <form id="RegForm">
-                                <input type="text" placeholder="username">
-                                <input type="email" placeholder="email">
-                                <input type="password" placeholder="password">
-                                <button type="submit" class="btn">Register</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                    
-            </div>
-        </div>
-        
-       
-        <!----------------------------------footer------------------------------------->
-        <div class ="footer">
-        <div class="container">
-            
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/logo-white.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                   <ul>
-                       <li>Coupons</li>
-                       <li>Blog Post</li>
-                       <li>Return Policy</li>
-                       <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                   <ul>
-                       <li>Facebook</li>
-                       <li>Twitter</li>
-                       <li>Instagram</li>
-                       <li>Youtube</li>
-                    </ul>
-                </div>
-                
+                <i class="fa fa-legal fa-2x"></i>
             </div>
             
-            <hr><!--horizontal line-->
-            <p class="copyright">Copyright 2021 - Apurba Kr. Pramanik</p>
-            
+            </div>
         </div>
     </div>
-        
-        
-        <!-----------------------------------js for toggle menu-------------------------------------->
-        <script>
-            var menuItems=document.getElementById("MenuItems");
-            
-            MenuItems.style.maxHeight="0px";
-            function menutoggle(){
-                if(MenuItems.style.maxHeight == "0px"){
-                    MenuItems.style.maxHeight="200px";
-                }
-                else{
-                    MenuItems.style.maxHeight="0px";
-                }
-            }
-        </script>
-        
-                <!-----------------------------------js for toggle form-------------------------------------->
-        <script>
-            var LoginForm=document.getElementById("LoginForm");
-            var RegForm=document.getElementById("RegForm");
-            var Indicator=document.getElementById("Indicator");
-            
-            function register(){
-                RegForm.style.transform="translateX(0px)";
-                LoginForm.style.transform="translateX(0px)";
-                Indicator.style.transform="translateX(100px)"
-            }
-            function login(){
-                RegForm.style.transform="translateX(300px)";
-                LoginForm.style.transform="translateX(300px)";
-                Indicator.style.transform="translateX(0px)";
-            }
-        </script>
+    <br />
+    <div class="font-[sans-serif] text-pink-800 bg-pink-100 px-6 py-12 mx-44">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold">SheShakti</h1>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 max-lg:max-w-2xl mx-auto mt-4">
+            <div>
+                <p></p>
+                <p class="mb-4 text-sm text-black font-[Poppins]">
+                    <b>Empower women and reduce gender inequality in India.</b> Gender
+                    equality is one of the 17 UN Goals for Sustainable Development.
+                    India is ranked 112th on the World Economic Forum’s Global Gender
+                    Gap Report, which reflects the extent of gender inequality in India.
+                    Pink Legal will contribute towards reducing this gender inequality
+                    by empowering women with the knowledge of their legal rights, as we
+                    believe that knowledge and information are two of the strongest
+                    instruments to facilitate change.
+                </p>
+    
+                <div class="grid xl:grid-cols-3 sm:grid-cols-2 gap-6 mt-12"></div>
+            </div>
+            <div>
+                <p class="mb-4 text-sm text-black font-[Poppins]">
+                    <b>Bridge the gap between laws in India and the common people.</b>
+                    Laws in India are drafted in an extremely complex legal language. We
+                    also have a complicated legal process and multiple laws for similar
+                    rights. Therefore, although laws are made for the benefit of people,
+                    they feel alienated from the law. Pink Legal addresses this issue by
+                    explaining the laws and legal processes to people in their language,
+                    making laws friendly, accessible, and less intimidating.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-8"></div>
+    
+    
 
-    </body>
+            
+
+    
+    
+</body>
+
 </html>
