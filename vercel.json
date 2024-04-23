@@ -1,0 +1,4 @@
+{
+  "routes": [{ "src": "/login/html", "dest": "" }]
+}
+
